@@ -3,7 +3,6 @@ protocol PizzeriaMenuProtocol {
     var name: String { get }
     var cost: Double { get }
 }
-
 struct Pizza: PizzeriaMenuProtocol {
     enum PizzaType {
         case margherita
@@ -66,7 +65,6 @@ extension Pizzeria: WorkableProtocol {
         print("Close")
     }
 }
-
 // 5. Написать функцию, в которой происходит вычитание одного числа из другого. Функция должна работать и с Int, и с Double.Функция должна возвращать результат вычитания.
 
 func minus<T: Numeric>(a: T, b: T) -> T {
